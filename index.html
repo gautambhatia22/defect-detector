@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AutoInspectAI - Surface Defect Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoInspectAI</h1>
+        <p>Upload an image of a machine or part to scan for surface defects.</p>
+        
+        <input type="file" id="imageUpload" accept="image/*">
+        <div class="image-preview" id="imagePreview">
+            <p>No image uploaded yet.</p>
+        </div>
+
+        <button onclick="detectDefect()">Analyze</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
